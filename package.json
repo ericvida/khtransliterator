@@ -1,0 +1,37 @@
+{
+  "name": "webpack-app-imba",
+  "description": "Hello World for Imba",
+  "keywords": [
+    "imba"
+  ],
+  "author": "Sindre Aarsaether",
+  "bugs": "https://github.com/imba/webpack-app-imba/issues",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --hot --content-base dist/",
+    "express": "imba src/server.imba",
+    "build": "webpack --mode=production",
+    "watch": "webpack --mode=development --watch --progress --colors --display-modules"
+  },
+  "files": [],
+  "directories": {},
+  "homepage": "http://imba.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/imba/hello-world-imba.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@digitallinguistics/transliterate": "^0.2.2",
+    "express": "^4.17.1",
+    "imba": "^2.0.0-alpha.99",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
+}
