@@ -1,5 +1,5 @@
 # https://medium.com/digital-linguistics/transliteration-in-javascript-99d306996752
-import {transliterate as tr} from '@digitallinguistics/transliterate'
+import {transliterate as tr} from './transliterate'
 import {dictionary} from './dictionary'
 
 tag App
