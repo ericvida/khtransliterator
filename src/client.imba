@@ -2,6 +2,8 @@
 import './styles'
 import {transliterate as tr} from './transliterate'
 import {dictionary} from './dictionary'
+import {khsv} from './khsvwordlist'
+
 
 tag App
 	# prop text = "កៀ គ្នា"
@@ -16,7 +18,6 @@ tag App
 		fld:column
 	css section
 		d:block
-		bd:red5 1px solid
 	def copy text
 		console.log $output
 		document.execCommand("Copy")
@@ -26,16 +27,21 @@ tag App
 		min-height:100vh
 	def render
 		<self>
-			<header[py:7 ta:center ff:sans fw:bold c:gray9]> "Khmer Transliteration to Vida Phonetic System"
+			<header[pt:7 pb:5 ta:center ff:sans fw:bold c:gray9]> "Khmer Transliteration to Vida Phonetic System"
 			<main[d:flex]>
-				<section[pt:3 py:6]>
-					<span[c:teal9 fw:bold bg:teal5 w:auto p:2 rd:1 pos:absolute mt:-10px ml:10px fs:.7em]> "Input"
+				<section[ff:sans]>
+					<span[c:teal9 fw:bold bg:teal5 w:auto p:2 rd:1 pos:absolute mt:-10px ml:10px fs:.7em]> "Paste Khmer Input here"
 					<textarea[pt:2em px:1em bg:white rd:2 fs:1xl w:100% min-height:90px] bind=text placeholder="paste khmer to transliterate">
 
 				<section[ff:sans pt:6]>			
 					<span[c:teal9 fw:bold bg:teal5 w:auto p:2 rd:1 pos:absolute mt:-10px ml:10px fs:.7em]> "Output"
 					<p[bg:gray9 c:white p:4 rd:2 fs:3 ff:mono]> 
 						tr(text, dictionary)
+				# <section>
+				# 	<ol>
+				# 		for item in khsv
+				# 			<li> "{item[0]} - {tr(item[0], dictionary)} - {item[1]}"
+						
 			<footer[ta:center ff:sans fs:.6em c: gray9]>
 				<p> "Created by Eric Vida"
 			# # WORKS mostly well
