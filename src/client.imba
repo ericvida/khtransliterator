@@ -7,7 +7,7 @@ import {khsv} from './khsvwordlist'
 
 tag App
 	# prop text = "កៀ គ្នា"
-	prop text = "ព្រះ‌ជាម្ចាស់​ស្រឡាញ់​មនុស្ស​លោក​ខ្លាំង​ណាស់ ហេតុ​នេះ​ហើយ​បាន​ជា​ព្រះអង្គ​ប្រទាន​ព្រះ‌បុត្រា​តែ​មួយ​របស់​ព្រះអង្គ​មក ដើម្បី​ឲ្យ​អស់​អ្នក​ដែល​ជឿ​លើ​ព្រះ‌បុត្រា មាន​ជីវិត​អស់‌កល្ប​ជានិច្ច គឺ​មិន​ឲ្យ​គេ​វិនាស​ឡើយ។"
+	prop text = "ព្រះ‌ជាម្ចាស់​ស្រឡាញ់​មនុស្ស​លោក​ខ្លាំង​ណាស់ ហេតុ​នេះ​ហើយ​បាន​ជា​ព្រះអង្គ​ប្រទាន​ព្រះ‌បុត្រា​តែ​មួយ​របស់​ព្រះអង្គ​មក ដើម្បី​ឲ្យ​អស់​អ្នក​ដែល​ជឿ​លើ​ព្រះ‌បុត្រា មាន​ជីវិត​អស់‌កល្ប​ជានិច្ច គឺ​មិន​ឲ្យ​គេ​វិនាស​ឡើយ។ - យ៉ូហាន ៣៖១៦"
 	css header
 		ta:center
 		input
@@ -31,7 +31,7 @@ tag App
 			<main[d:flex]>
 				<section[ff:sans]>
 					<span[c:teal9 fw:bold bg:teal5 w:auto p:2 rd:1 pos:absolute mt:-10px ml:10px fs:.7em]> "Paste Khmer Input here"
-					<textarea[pt:2em px:1em bg:white rd:2 fs:1xl w:100% min-height:90px] bind=text placeholder="paste khmer to transliterate">
+					<textarea[pt:1.2em px:1em bg:white rd:2 fs:1.5em w:100% min-height:200px] bind=text placeholder="paste khmer to transliterate">
 
 				<section[ff:sans pt:6]>			
 					<span[c:teal9 fw:bold bg:teal5 w:auto p:2 rd:1 pos:absolute mt:-10px ml:10px fs:.7em]> "Output"

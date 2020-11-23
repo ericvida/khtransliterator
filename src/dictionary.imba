@@ -227,6 +227,7 @@ export const dictionary =
 	"យាង": "yụụŋ"
 	"រាស្ត្រ": "ṛiạh"
 	"អ្នក​": "neak"
+	"អ្នក": "ṇeak"
 	"អាច": "aic"
 	"បុត្រា": "botraa"
 	"​របស់​": "robȯh"
