@@ -1,4 +1,4 @@
-const khov =
+export const khov =
 	"ជា" : 26788
 	"បាន" : 23459
 	"នោះ" : 21528

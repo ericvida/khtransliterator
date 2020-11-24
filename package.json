@@ -26,6 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "imba": "^2.0.0-alpha.100",
+    "transliteration": "^2.2.0",
     "webpack": "^4.44.1",
     "webpack-dev-server": "^3.11.0"
   },
