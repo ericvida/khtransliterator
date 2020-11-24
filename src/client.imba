@@ -9,6 +9,7 @@ tag App
 		bg:gray9
 		d:block
 		min-height:100vh
+		px:6
 		header
 			ta:center
 			m:0
@@ -60,14 +61,14 @@ tag App
 				<h6> "Khmer to Vida Writing System Conversion tool by Eric Vida."
 			<main>
 				<section>
-					<span> "Paste/Type Khmer Here"
+					<span> "Paste/Type Khmer"
 					<textarea bind=text placeholder="paste khmer to transliterate">
 				<section>			
-					<span> "Vida System"
+					<span> "Vida Writing System"
 					<div>
 						tr(text.replaceAll('\u200B', "\u0020").replaceAll('\u200C', "—"), syl)
 				<section>			
-					<span> "Khmer Spaced"
+					<span> "Khmer Script - Spaced"
 					<div>
 						text.replaceAll('\u200B', "\u0020").replaceAll('\u200C', "—")
 imba.mount <App>
