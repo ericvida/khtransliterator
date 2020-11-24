@@ -56,8 +56,8 @@ tag App
 	def render
 		<self>
 			<header>
-				<h3> "Ȯks̱aaṾida"
-				<h6> "Khmer to Vida Writing System transliterator"
+				<h3> "Ȯks̱ȯṾidaa"
+				<h6> "Khmer to Vida Writing System Conversion tool by Eric Vida."
 			<main>
 				<section>
 					<span> "Paste/Type Khmer Here"
@@ -70,6 +70,4 @@ tag App
 					<span> "Khmer Spaced"
 					<div>
 						text.replaceAll('\u200B', "\u0020").replaceAll('\u200C', "—")
-			<footer[ta:center ff:sans fs:.6em c: gray9]>
-				<p> "Created by Eric Vida"
 imba.mount <App>
