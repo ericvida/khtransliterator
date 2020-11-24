@@ -54,11 +54,20 @@ tag App
 				fs:1em
 				mb:8px
 				d:block
+		footer
+			ta:center
+			c:gray4
+			ff:sans
+			a@active,a@visited
+				c:gray6
+			a@hover
+				c:orange4
+			
 	def render
 		<self>
 			<header>
 				<h3> "Ȯks̱ȯṾidaa"
-				<h6> "Khmer to Vida Writing System Conversion tool by Eric Vida."
+				<h6> "Khmer to Vida writing system conversion tool"
 			<main>
 				<section>
 					<span> "Paste/Type Khmer"
@@ -71,4 +80,5 @@ tag App
 					<span> "Khmer Script - Spaced"
 					<div>
 						text.replaceAll('\u200B', "\u0020").replaceAll('\u200C', "—")
+			<footer> "created by {<a href="https://github.com/ericvida/" target="_blank"> "Eric Vida"}"
 imba.mount <App>
